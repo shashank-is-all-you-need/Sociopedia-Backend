@@ -13,7 +13,7 @@ const TestController = require('./controllers/test-controller.js');
 // Creating an Express application instance
 const app = express();
 
-// Using TestController for routes under "/sociopedia/test"
+// Using the cache middleware for all routes under "/sociopedia/test"
 app.use("/sociopedia/test", TestController);
 
 // Enabling Cross-Origin Resource Sharing (CORS)
